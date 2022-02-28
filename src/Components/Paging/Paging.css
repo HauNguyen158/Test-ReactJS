@@ -1,0 +1,19 @@
+.paging{
+    margin: 10px;
+}
+.paging button{
+    display: inline-block;
+    padding: 10px 16px;
+    /* float: left; */
+    line-height: 16px;
+    margin-right: 2px;
+    border: solid 1px #bbb;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+}
+.paging button.current, .paging button:hover {
+    background: #c8191f;
+    border: 1px solid #c8191f;
+    color: #fff;
+}

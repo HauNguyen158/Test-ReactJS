@@ -1,0 +1,94 @@
+
+.animal{
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    background-color: rgb(250, 251, 252, 0.9);
+    border-radius: 5px;
+}
+.animal-text{
+    width: 100%;
+    font-size: 30px;
+    margin: 10px;
+    font-style: bold;
+}
+.details-animal{
+    height: 380px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.details-animal .main-animal{
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: rgb(197, 198, 199) 1px solid;
+}
+
+.main-animal .image-animal{
+    width: 100%;
+    height: 275px;
+}
+
+.image-animal img{
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+}
+
+.name-animal{
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+    padding: 5px 5px 0px 5px;
+    color: #fd2828;
+    font-style: bold;
+    font-size: 20px;
+}
+.info-animal{
+    padding: 10px 5px 0px 5px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 18px;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .details-animal{
+        width: 50%;
+        padding: 3px;
+    }
+}
+/* table */
+@media only screen and (min-width: 600px) {
+    .details-animal{
+        width: 33.333333%;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 1024px) {
+    .details-animal{
+        width: 25%;
+    }
+    .animal{
+        margin: -100px 10px 0px 10px;
+    }
+}
+/* pc L*/
+@media only screen and (min-width: 1440px) {
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+    .details-animal{
+        width: 16.66666667%;
+        
+    }
+    .animal{
+        margin: -150px 10px 0px 10px;
+    }
+}
